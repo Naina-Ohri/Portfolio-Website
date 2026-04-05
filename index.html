@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Jordan | Portfolio</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; background: #f5f7ff; color: #1a1a2e; }
+        
+        nav {
+            background: #1A56DB;
+            padding: 15px 40px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            position: sticky;
+            top: 0;
+        }
+        nav .logo { color: white; font-size: 1.3rem; font-weight: bold; }
+        nav ul { list-style: none; display: flex; gap: 25px; }
+        nav ul a { color: white; text-decoration: none; font-size: 0.95rem; }
+        nav ul a:hover { opacity: 0.8; }
+
+        .hero {
+            background: linear-gradient(135deg, #1A56DB, #0a2d6e);
+            color: white;
+            text-align: center;
+            padding: 80px 20px;
+        }
+        .hero h1 { font-size: 2.8rem; margin-bottom: 10px; }
+        .hero p { font-size: 1.2rem; opacity: 0.9; margin-bottom: 25px; }
+        .hero .btn {
+            background: white;
+            color: #1A56DB;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            margin: 5px;
+            display: inline-block;
+        }
+        .hero .btn:hover { background: #e8f0ff; }
+
+        section { padding: 60px 10%; }
+        section h2 { font-size: 1.8rem; color: #1A56DB; margin-bottom: 30px; border-bottom: 3px solid #1A56DB; padding-bottom: 8px; }
+
+        .about p { font-size: 1rem; line-height: 1.8; color: #333; }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 15px;
+        }
+        .skill-card {
+            background: white;
+            border: 2px solid #1A56DB;
+            border-radius: 10px;
+            padding: 15px;
+            text-align: center;
+            font-weight: bold;
+            color: #1A56DB;
+            box-shadow: 0 2px 8px rgba(26,86,219,0.1);
+        }
+
+        .projects-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .project-card {
+            background: white;
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+            border-top: 4px solid #1A56DB;
+        }
+        .project-card h3 { color: #1A56DB; margin-bottom: 10px; }
+        .project-card p { color: #555; font-size: 0.95rem; line-height: 1.6; }
+        .tag {
+            display: inline-block;
+            background: #e8f0ff;
+            color: #1A56DB;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 0.8rem;
+            margin: 4px 2px 0;
+        }
+
+        .education-item {
+            background: white;
+            border-radius: 10px;
+            padding: 20px 25px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+            border-left: 4px solid #1A56DB;
+        }
+        .education-item h3 { color: #1a1a2e; margin-bottom: 5px; }
+        .education-item p { color: #555; font-size: 0.95rem; }
+
+        .contact { background: #1A56DB; color: white; text-align: center; }
+        .contact h2 { color: white; border-bottom-color: white; }
+        .contact p { margin: 10px 0; font-size: 1rem; }
+        .contact a { color: #cde0ff; text-decoration: none; }
+        .contact a:hover { color: white; }
+
+        footer { background: #0a2d6e; color: #aaa; text-align: center; padding: 15px; font-size: 0.85rem; }
+    </style>
+</head>
+<body>
+
+<nav>
+    <div class="logo">Alex Jordan</div>
+    <ul>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#education">Education</a></li>
+        <li><a href="#contact">Contact</a></li>
+    </ul>
+</nav>
+
+<div class="hero">
+    <h1>Hi, I'm Alex Jordan 👋</h1>
+    <p>Aspiring Software Developer | B.Tech IT | AI/ML Enthusiast</p>
+    <a href="#projects" class="btn">View My Work</a>
+    <a href="#contact" class="btn">Contact Me</a>
+</div>
+
+<section class="about" id="about">
+    <h2>About Me</h2>
+    <p>I'm a 2nd year B.Tech Information Technology student with a strong academic record. I'm passionate about building efficient software solutions and exploring the world of AI and Machine Learning. I enjoy problem solving, working with Python and C++, and actively developing my web development skills.</p>
+</section>
+
+<section id="skills">
+    <h2>Technical Skills</h2>
+    <div class="skills-grid">
+        <div class="skill-card">C++</div>
+        <div class="skill-card">Python</div>
+        <div class="skill-card">MySQL</div>
+        <div class="skill-card">HTML5</div>
+        <div class="skill-card">CSS3</div>
+        <div class="skill-card">JavaScript</div>
+        <div class="skill-card">DSA</div>
+        <div class="skill-card">OOP</div>
+        <div class="skill-card">AI/ML</div>
+        <div class="skill-card">Git & GitHub</div>
+    </div>
+</section>
+
+<section id="projects">
+    <h2>Projects</h2>
+    <div class="projects-grid">
+        <div class="project-card">
+            <h3>Portfolio Website</h3>
+            <p>A personal portfolio website to showcase skills, education, and projects. Built with pure HTML and CSS with a clean, responsive design.</p>
+            <br>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">Responsive Design</span>
+        </div>
+        <div class="project-card">
+            <h3>AI Study Planner</h3>
+            <p>A browser-based tool that helps students generate personalized study schedules. Input your subjects and deadlines to get a prioritized weekly plan.</p>
+            <br>
+            <span class="tag">HTML5</span>
+            <span class="tag">CSS3</span>
+            <span class="tag">JavaScript</span>
+        </div>
+    </div>
+</section>
+
+<section id="education">
+    <h2>Education</h2>
+    <div class="education-item">
+        <h3>B.Tech – Information Technology</h3>
+        <p>State Technical University | 2024 – Present | CGPA: 8.97</p>
+    </div>
+    <div class="education-item">
+        <h3>Class XII – Science (PCM + CS)</h3>
+        <p>City Public School | 2024 | 89.2%</p>
+    </div>
+    <div class="education-item">
+        <h3>Class X</h3>
+        <p>City Public School | 2022 | 91.6%</p>
+    </div>
+</section>
+
+<section class="contact" id="contact">
+    <h2>Contact Me</h2>
+    <p>📧 <a href="mailto:alexjordan.dev@gmail.com">alexjordan.dev@gmail.com</a></p>
+    <p>🔗 <a href="#">LinkedIn</a> &nbsp;|&nbsp; <a href="#">GitHub</a></p>
+</section>
+
+<footer>
+    <p>© 2026 Alex Jordan | Built with HTML & CSS</p>
+</footer>
+
+</body>
+</html>
